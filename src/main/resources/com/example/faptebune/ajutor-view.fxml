@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.faptebune.AjutorController">
+   <children>
+      <TabPane layoutX="25.0" layoutY="25.0" prefHeight="764.0" prefWidth="1151.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Doresc sa ajut!">
+               <content>
+                  <AnchorPane prefHeight="679.0" prefWidth="1151.0">
+                     <children>
+                        <TableView fx:id="nevoiTableView" layoutX="25.0" layoutY="55.0" prefHeight="266.0" prefWidth="1104.0">
+                          <columns>
+                              <TableColumn fx:id="idColumn" prefWidth="75.0" text="id" />
+                            <TableColumn fx:id="titluColumn" prefWidth="187.0" text="titlu" />
+                            <TableColumn fx:id="descriereColumn" prefWidth="197.0" text="descriere" />
+                              <TableColumn fx:id="deadlineColumn" prefWidth="261.0" text="deadline" />
+                              <TableColumn fx:id="omNevoieColumn" prefWidth="106.0" text="om_in_nevoie" />
+                              <TableColumn fx:id="omSalvatorColumn" prefWidth="95.0" text="om_salvator" />
+                              <TableColumn fx:id="statusColumn" prefWidth="257.0" text="status" />
+                          </columns>
+                        </TableView>
+                        <Button fx:id="rezolvaButton" layoutX="546.0" layoutY="340.0" mnemonicParsing="false" onAction="#onRezolva" text="Rezolva" />
+                        <Text layoutX="497.0" layoutY="417.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Faptele tale bune">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="503.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Devino salvator!">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                        </Text>
+                        <TableView fx:id="fapteTableView" layoutX="26.0" layoutY="440.0" prefHeight="266.0" prefWidth="1104.0">
+                           <columns>
+                              <TableColumn fx:id="idFaptaColumn" prefWidth="75.0" text="id" />
+                              <TableColumn fx:id="titluFaptaColumn" prefWidth="256.0" text="titlu" />
+                              <TableColumn fx:id="descriereFaptaColumn" prefWidth="383.0" text="descriere" />
+                              <TableColumn fx:id="deadlineFaptaColumn" prefWidth="244.0" text="deadline" />
+                              <TableColumn fx:id="omNevoieFaptaColumn" prefWidth="145.0" text="om_in_nevoie" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content></Tab>
+          <Tab text="Doresc sa fiu ajutat!">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Text layoutX="389.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Formular pentru inregistrarea unei nevoi">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                        </Text>
+                        <Label layoutX="435.0" layoutY="217.0" text="Titlu">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="titluTF" layoutX="544.0" layoutY="216.0" prefHeight="27.0" prefWidth="188.0" />
+                        <Label layoutX="418.0" layoutY="274.0" text="Descriere">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="descriereTF" layoutX="544.0" layoutY="273.0" prefHeight="27.0" prefWidth="188.0" />
+                        <Label layoutX="419.0" layoutY="332.0" text="Deadline">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <DatePicker fx:id="deadlineDatePicker" layoutX="544.0" layoutY="331.0" />
+                        <Button fx:id="inregistreazaButton" layoutX="518.0" layoutY="415.0" mnemonicParsing="false" onAction="#onInregistreaza" prefHeight="20.0" prefWidth="116.0" text="Inregistreaza">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </content></Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
