@@ -16,3 +16,16 @@ The main features are:
 - Gradle - Build Automation Tool
 
 ## Presentation
+
+  - Sign in or log in interface
+
+![image](https://user-images.githubusercontent.com/126579537/223376159-c6aa37e2-7a7f-4490-b158-244a1a396549.png)
+
+  - View the existing need in the user's city and their already done good deeds
+
+![image](https://user-images.githubusercontent.com/126579537/223378113-e8fc6167-4e3c-448b-a606-ca93430ff69f.png)
+ 
+ -  Submit a need and wait for other city within the city to provide help
+
+![image](https://user-images.githubusercontent.com/126579537/223378582-dcab30cb-4ae2-469a-ae22-e07761b7563c.png)
+
