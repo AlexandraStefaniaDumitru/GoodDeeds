@@ -98,16 +98,16 @@ public class AjutorController {
         Nevoie nevoie = nevoiTableView.getSelectionModel().getSelectedItem();
         if (nevoie.getOm_salvator() >= 1) {
             Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setTitle("RESPINGERE AJUTOR");
+            alert.setTitle("DENY HELP");
             alert.setHeaderText(null);
-            alert.setContentText("Nevoia selectata nu va poate fi atribuita. Exista deja un salvator.");
+            alert.setContentText("The selected need cannot be assigned. Hero already found!");
             alert.showAndWait();
         } else if (this.service.rezolvaNevoie(nevoie, username) != null) {
             initialize(service, username);
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
-            alert.setTitle("CONFIRMARE AJUTOR");
+            alert.setTitle("CONFIRM HELP");
             alert.setHeaderText(null);
-            alert.setContentText("Nevoia aleasa v-a fost atribuita!");
+            alert.setContentText("The selected need have been assigned. You are a hero!");
             alert.showAndWait();
         }
     }

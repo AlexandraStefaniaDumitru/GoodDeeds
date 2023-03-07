@@ -63,7 +63,7 @@ public class Service {
 
     public Nevoie rezolvaNevoie(Nevoie nevoie, String username) {
         Persoana persoana = this.findPersoanaByUsername(username);
-        nevoie.setStatus("Erou gasit!");
+        nevoie.setStatus("Hero already found!");
         assert persoana != null;
         nevoie.setOm_salvator(persoana.getId());
         try {
@@ -91,7 +91,7 @@ public class Service {
         assert persoana != null;
         Long id = persoana.getId()+date.getDayOfYear()+ date.getDayOfMonth();
         LocalDateTime deadline = LocalDateTime.of(date, LocalTime.parse("23:59:59"));
-        Nevoie nevoie = new Nevoie(id,titlu, descriere,deadline,persoana.getId(), null, "Caut erou!");
+        Nevoie nevoie = new Nevoie(id,titlu, descriere,deadline,persoana.getId(), null, "Looking for a hero!");
         try {
             this.nevoieRepository.save(nevoie);
         } catch (EmptyStringException | NegativeNumberException e) {

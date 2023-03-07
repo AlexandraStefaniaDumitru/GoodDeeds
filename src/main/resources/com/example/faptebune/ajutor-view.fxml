@@ -16,7 +16,7 @@
    <children>
       <TabPane layoutX="25.0" layoutY="25.0" prefHeight="764.0" prefWidth="1151.0" tabClosingPolicy="UNAVAILABLE">
         <tabs>
-          <Tab text="Doresc sa ajut!">
+          <Tab text="I want to help!">
                <content>
                   <AnchorPane prefHeight="679.0" prefWidth="1151.0">
                      <children>
@@ -31,13 +31,13 @@
                               <TableColumn fx:id="statusColumn" prefWidth="257.0" text="status" />
                           </columns>
                         </TableView>
-                        <Button fx:id="rezolvaButton" layoutX="546.0" layoutY="340.0" mnemonicParsing="false" onAction="#onRezolva" text="Rezolva" />
-                        <Text layoutX="497.0" layoutY="417.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Faptele tale bune">
+                        <Button fx:id="rezolvaButton" layoutX="530.0" layoutY="340.0" mnemonicParsing="false" onAction="#onRezolva" text="Provide help" />
+                        <Text layoutX="497.0" layoutY="417.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Good Deeds">
                            <font>
                               <Font size="21.0" />
                            </font>
                         </Text>
-                        <Text layoutX="503.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Devino salvator!">
+                        <Text layoutX="503.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Become a hero!">
                            <font>
                               <Font size="21.0" />
                            </font>
@@ -54,22 +54,22 @@
                      </children>
                   </AnchorPane>
                </content></Tab>
-          <Tab text="Doresc sa fiu ajutat!">
+          <Tab text="I need to be helped!">
                <content>
                   <AnchorPane prefHeight="200.0" prefWidth="200.0">
                      <children>
-                        <Text layoutX="389.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Formular pentru inregistrarea unei nevoi">
+                        <Text layoutX="435.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Submit your need here!">
                            <font>
                               <Font size="21.0" />
                            </font>
                         </Text>
-                        <Label layoutX="435.0" layoutY="217.0" text="Titlu">
+                        <Label layoutX="435.0" layoutY="217.0" text="Title">
                            <font>
                               <Font size="16.0" />
                            </font>
                         </Label>
                         <TextField fx:id="titluTF" layoutX="544.0" layoutY="216.0" prefHeight="27.0" prefWidth="188.0" />
-                        <Label layoutX="418.0" layoutY="274.0" text="Descriere">
+                        <Label layoutX="418.0" layoutY="274.0" text="Description">
                            <font>
                               <Font size="16.0" />
                            </font>
@@ -81,7 +81,7 @@
                            </font>
                         </Label>
                         <DatePicker fx:id="deadlineDatePicker" layoutX="544.0" layoutY="331.0" />
-                        <Button fx:id="inregistreazaButton" layoutX="518.0" layoutY="415.0" mnemonicParsing="false" onAction="#onInregistreaza" prefHeight="20.0" prefWidth="116.0" text="Inregistreaza">
+                        <Button fx:id="inregistreazaButton" layoutX="518.0" layoutY="415.0" mnemonicParsing="false" onAction="#onInregistreaza" prefHeight="20.0" prefWidth="116.0" text="Submit">
                            <font>
                               <Font size="15.0" />
                            </font>
